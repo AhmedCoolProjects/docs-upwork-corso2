@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import feather from "feather-icons";
 import { WOW } from "wowjs";
+import { jarallax } from "jarallax";
 import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function ThirdSection() {
@@ -10,6 +11,9 @@ export default function ThirdSection() {
         useEffect(() => {
           new WOW().init();
           feather.replace();
+          jarallax(document.querySelectorAll(".jarallax"), {
+            speed: 0.2,
+          });
         });
         return (
           <section class="relative md:py-24 py-16 overflow-hidden">
