@@ -1,5 +1,8 @@
 import React from "react";
 import "animate.css";
+import loadable from "@loadable/component";
+
+const OtherComponent = loadable(() => import("./ThirdSection"));
 
 export function MainComp() {
   return (
@@ -74,6 +77,7 @@ export function MainComp() {
           </div>
         </section>
         {/* SECTION 3 */}
+        <OtherComponent />
         {/* SECTION 4 */}
         <section class="relative md:py-16  py-12 md:pt-0 pt-0">
           <div class="absolute bottom-0 left-0 !z-0 right-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-indigo-500 to-indigo-600"></div>
