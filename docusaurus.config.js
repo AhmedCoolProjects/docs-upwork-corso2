@@ -36,7 +36,6 @@ const config = {
   customFields: {
     corsoVersion: `${process.env.CORSO_VERSION}`,
   },
-
   presets: [
     [
       "classic",

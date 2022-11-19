@@ -34,6 +34,7 @@ html{
 /* You can override the default Infima variables here. */
 
 @tailwind utilities;
+@tailwind components;
 
 .custom-bg_{
   background: url("../../static/assets/images/cta.jpg")
