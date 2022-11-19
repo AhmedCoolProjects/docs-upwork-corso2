@@ -3,7 +3,7 @@ import "animate.css";
 
 export default function FirstSection() {
   return (
-    <section className="relative home-wrapper items-center overflow-hidden">
+    <section className="relative flex flex-col home-wrapper items-center overflow-hidden">
       <div
         className="bg-[#151C3D] absolute"
         style={{
@@ -11,7 +11,7 @@ export default function FirstSection() {
           right: 0,
           zIndex: 1,
           top: "-30%",
-          height: "65rem",
+          height: "62rem",
           width: "140rem",
           transform: "rotate(-12deg)",
         }}
@@ -20,11 +20,11 @@ export default function FirstSection() {
         style={{
           zIndex: "1 !important",
         }}
-        className="container !z-10"
+        className="!container relative !z-10"
       >
-        <div className="grid !z-10 grid-cols-1 md:mt-44 mt-32 text-center">
+        <div className="grid !z-10 grid-cols-1 mt-28 text-center">
           <div className="wow !z-10 animate__animated animate__fadeIn">
-            <h4 className="font-bold !z-10 !leading-relaxed text-4xl lg:text-5xl mb-5">
+            <h4 className="font-bold !text-white !z-10 !leading-normal text-4xl lg:text-5xl mb-5">
               Free, Secure, and Open-Source
               <br /> Backup for Microsoft 365
             </h4>
@@ -52,7 +52,7 @@ export default function FirstSection() {
           >
             <img
               src="assets/images/cloudbackup.svg"
-              className="w-[80%] inline-block"
+              className="w-[70%] inline-block object-contain"
               alt="Cloud backup and storage"
             />
           </div>
