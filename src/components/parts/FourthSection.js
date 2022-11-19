@@ -1,5 +1,6 @@
 import React from "react";
 import "animate.css";
+import { Icon } from "@iconify/react";
 
 export default function FourthSection() {
   return (
@@ -46,10 +47,13 @@ export default function FourthSection() {
                         </p>
                         <a
                           href="https://docs.corsobackup.io/quickstart"
-                          className="text-white"
+                          className="!text-white !no-underline flex flex-row items-center !hover:text-white"
                         >
                           Get Started{" "}
-                          <i className="uil uil-angle-right-b align-middle"></i>
+                          <Icon
+                            icon="uim:angle-right-b"
+                            className="align-middle"
+                          />
                         </a>
                       </div>
                     </div>

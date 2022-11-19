@@ -260,7 +260,7 @@ export default function ThirdSection() {
                     <a
                       href="https://discord.gg/63DTTSnuhT"
                       target="_blank"
-                      className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
+                      className="btn btn-link !no-underline link-underline link-underline-black text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
                     >
                       Join Us On Discord{" "}
                       <Icon icon="uim:angle-right-b" className="align-middle" />
@@ -379,7 +379,7 @@ export default function ThirdSection() {
                     <a
                       href="https://docs.corsobackup.io/quickstart"
                       target="_blank"
-                      className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
+                      className="btn btn-link !no-underline link-underline link-underline-black text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
                     >
                       Use The Quick Start For Your First Backup{" "}
                       <Icon icon="uim:angle-right-b" className="align-middle" />
@@ -445,7 +445,7 @@ export default function ThirdSection() {
                     <a
                       href="https://docs.corsobackup.io/setup/repos"
                       target="_blank"
-                      className="btn btn-link text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
+                      className="btn btn-link !no-underline link-underline link-underline-black text-indigo-600 hover:text-indigo-600 after:bg-indigo-600 duration-500 ease-in-out"
                     >
                       Read about our Object Storage support{" "}
                       <Icon icon="uim:angle-right-b" className="align-middle" />
