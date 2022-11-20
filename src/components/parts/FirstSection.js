@@ -3,7 +3,7 @@ import "animate.css";
 
 export default function FirstSection() {
   return (
-    <section className="relative flex flex-col home-wrapper items-center overflow-hidden">
+    <section className="relative !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
         className="bg-[#151C3D] absolute"
         style={{
@@ -58,11 +58,11 @@ export default function FirstSection() {
           </div>
         </div>
 
-        <div className="bg-indigo-600 w-8 h-16 !z-10 absolute left-2 lg:bottom-28 md:bottom-36 sm:bottom-40 bottom-16"></div>
-        <div className="bg-indigo-600/20 w-8 h-16 !z-10 absolute left-12 lg:bottom-32 md:bottom-40 sm:bottom-44 bottom-20"></div>
+        <div className="bg-indigo-600 w-8 h-16 !z-10 absolute left-8 lg:bottom-28 md:bottom-36 sm:bottom-40 bottom-16"></div>
+        <div className="bg-indigo-600/20 w-8 h-16 !z-10 absolute left-20 lg:bottom-32 md:bottom-40 sm:bottom-44 bottom-20"></div>
 
-        <div className="bg-indigo-600/20 !z-10 w-8 h-16 absolute right-12 xl:bottom-[420px] lg:bottom-[315px] md:bottom-[285px] sm:bottom-80 bottom-32"></div>
-        <div className="bg-indigo-600 w-8 h-16 !z-10 absolute right-2 xl:bottom-[440px] lg:bottom-[335px] md:bottom-[305px] sm:bottom-[340px] bottom-36"></div>
+        <div className="bg-indigo-600/20 !z-10 w-8 h-16 absolute right-20 xl:bottom-[420px] lg:bottom-[315px] md:bottom-[285px] sm:bottom-80 bottom-32"></div>
+        <div className="bg-indigo-600 w-8 h-16 !z-10 absolute right-8 xl:bottom-[440px] lg:bottom-[335px] md:bottom-[305px] sm:bottom-[340px] bottom-36"></div>
       </div>
     </section>
   );
