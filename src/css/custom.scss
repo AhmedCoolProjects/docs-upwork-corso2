@@ -41,10 +41,14 @@ html{
 
 }
 
+html[data-theme='light'] {
+  --ifm-background-color: #ffffff;
+}
 html[data-theme='dark'] {
   --ifm-background-color: #111629;
   --ifm-link-color: #087EA4;
 }
+
 
 .accordion-button-custom::after {
   -ms-flex-shrink: 0;
