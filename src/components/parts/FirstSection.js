@@ -1,11 +1,13 @@
 import React from "react";
 import "animate.css";
+import { useColorMode } from "@docusaurus/theme-common";
 
 export default function FirstSection() {
+  const { isDarkTheme: isDark } = useColorMode();
   return (
     <section className="relative !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
-        className="bg-[#151C3D] absolute"
+        className={`${isDark ? "bg-[#151C3D]" : "bg-[#f6f6fe]"} absolute`}
         style={{
           left: "-20rem",
           right: 0,
@@ -24,11 +26,19 @@ export default function FirstSection() {
       >
         <div className="grid !z-10 grid-cols-1 mt-28 text-center">
           <div className="wow !z-10 animate__animated animate__fadeIn">
-            <h4 className="font-bold !text-white !z-10 !leading-normal text-4xl lg:text-5xl mb-5">
+            <h4
+              className={`font-bold ${
+                isDark ? "text-white" : "text-[#161c2d]"
+              } !z-10 !leading-normal text-4xl lg:text-5xl mb-5`}
+            >
               Free, Secure, and Open-Source
               <br /> Backup for Microsoft 365
             </h4>
-            <p className="text-slate-300 !z-10 text-xl max-w-xl mx-auto">
+            <p
+              className={`${
+                isDark ? "text-slate-300" : "text-[#94A3B8]"
+              } !z-10 text-xl max-w-xl mx-auto`}
+            >
               The #1 open-source backup tool for Microsoft 365
             </p>
           </div>
@@ -37,7 +47,7 @@ export default function FirstSection() {
             <a
               href="https://docs.corsobackup.io/setup/download"
               target="_blank"
-              className="text-2xl !z-10 !no-underline hover:text-white py-2 px-6 font-bold btn bg-indigo-800 hover:bg-indigo-900 border-indigo-800 hover:border-indigo-900 text-white rounded-md"
+              className="text-2xl !z-10 !no-underline hover:text-white py-3 px-6 font-bold btn bg-indigo-800 hover:bg-indigo-900 border-indigo-800 hover:border-indigo-900 text-white rounded-md"
             >
               Download Now
             </a>

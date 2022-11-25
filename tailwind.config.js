@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   plugins: [require("tw-elements/dist/plugin")],
   // darkMode: "class",
-  // important: true,
+  important: true,
   theme: {
     screens: {
       xs: "540px",
