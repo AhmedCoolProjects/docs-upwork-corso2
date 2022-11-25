@@ -5,6 +5,46 @@ import { jarallax } from "jarallax";
 import { Icon } from "@iconify/react";
 import "animate.css";
 import "tw-elements";
+import { useColorMode } from "@docusaurus/theme-common";
+
+const KeyFeaturesData = [
+  {
+    icon: "share-2",
+    content: "Comprehensive Workflows",
+  },
+  {
+    icon: "zap",
+    content: "High Throughput",
+  },
+  {
+    icon: "activity",
+    content: "Fault Tolerance",
+  },
+  {
+    icon: "lock",
+    content: "End-to-End Encryption",
+  },
+  {
+    icon: "copy",
+    content: "Deduplication",
+  },
+  {
+    icon: "minimize-2",
+    content: "Compression",
+  },
+  {
+    icon: "code",
+    content: "Open Source",
+  },
+  {
+    icon: "upload-cloud",
+    content: "Choice of Object Storage",
+  },
+  {
+    icon: "check-circle",
+    content: "Retention Policies",
+  },
+];
 
 export default function ThirdSection() {
   useEffect(() => {
@@ -15,6 +55,8 @@ export default function ThirdSection() {
     });
   });
 
+  const { isDarkTheme: isDark } = useColorMode();
+
   return (
     <section className="relative md:py-24 !tracking-wide py-16 overflow-hidden">
       <div className="container">
@@ -22,154 +64,28 @@ export default function ThirdSection() {
           className="grid grid-cols-1 pb-8 text-center wow animate__animated animate__fadeInUp"
           data-wow-delay=".1s"
         >
-          <h3 className="mb-6 mt-8 md:text-4xl text-white text-3xl md:leading-normal leading-normal font-bold">
+          <h3
+            className={`mb-6 mt-8 md:text-4xl ${
+              isDark ? "text-white" : "text-[#161C2D]"
+            } text-3xl md:leading-normal leading-normal font-bold`}
+          >
             Key Features
           </h3>
 
-          <p className="text-slate-400 max-w-xl mx-auto">
+          <p
+            className={`${
+              isDark ? "text-slate-400" : "text-[#94A3B8]"
+            } max-w-xl mx-auto`}
+          >
             See why Corso is a perfect fit for your Microsoft 365 backup and
             recovery needs.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-flow-row-dense gap-[30px] mt-8">
-          <div
-            className="col-start-1 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".1s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="share-2" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">
-                  Comprehensive Workflows
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-start-1 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".1s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="zap" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">High Throughput</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-start-1 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".1s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="activity" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">Fault Tolerance</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-2 md:col-start-1  wow animate__animated animate__fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="lock" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">
-                  End-to-End Encryption
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-2 md:col-start-2 md:order-last wow animate__animated animate__fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="copy" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">Deduplication</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-2 md:col-start-2 md:order-last wow animate__animated animate__fadeInUp"
-            data-wow-delay=".3s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="minimize-2" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">Compression</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-3 md:col-start-2 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i data-feather="code" className="h-5 w-5 rotate-45"></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">Open Source</h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-3 md:col-start-2 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i
-                  data-feather="upload-cloud"
-                  className="h-5 w-5 rotate-45"
-                ></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">
-                  Choice of Object Storage
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="lg:col-start-3 md:col-start-2 wow animate__animated animate__fadeInUp"
-            data-wow-delay=".5s"
-          >
-            <div className="flex transition-all duration-500 scale-hover shadow dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md bg-white dark:bg-slate-900">
-              <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
-                <i
-                  data-feather="check-circle"
-                  className="h-5 w-5 rotate-45"
-                ></i>
-              </div>
-              <div className="flex-1">
-                <h4 className="mb-0 text-lg font-medium">Retention Policies</h4>
-              </div>
-            </div>
-          </div>
+          {KeyFeaturesData.map((item, index) => (
+            <KeyFeaturesCard key={index} {...item} />
+          ))}
         </div>
       </div>
 
@@ -673,3 +589,27 @@ export default function ThirdSection() {
     </section>
   );
 }
+
+const KeyFeaturesCard = ({ content, icon }) => {
+  const { isDarkTheme: isDark } = useColorMode();
+
+  return (
+    <div
+      className="wow animate__animated animate__fadeInUp"
+      data-wow-delay=".1s"
+    >
+      <div
+        className={`flex transition-all duration-500 scale-hover shadow shadow-gray-800 hover:shadow-md hover:shadow-gray-700 ease-in-out items-center p-3 rounded-md ${
+          isDark ? "bg-slate-900" : "bg-white"
+        }`}
+      >
+        <div className="flex items-center justify-center h-[45px] min-w-[45px] -rotate-45 bg-gradient-to-r from-transparent to-indigo-600/10 text-indigo-600 text-center rounded-full mr-3">
+          <i data-feather={icon} className="h-5 w-5 rotate-45"></i>
+        </div>
+        <div className="flex-1">
+          <h4 className="mb-0 text-lg font-medium">{content}</h4>
+        </div>
+      </div>
+    </div>
+  );
+};
