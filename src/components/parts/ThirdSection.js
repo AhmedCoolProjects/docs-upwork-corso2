@@ -46,6 +46,77 @@ const KeyFeaturesData = [
   },
 ];
 
+const AccordionItemsData = [
+  {
+    id: "One",
+    title: "What platforms does Corso run on?",
+    description:
+      "Corso has both native binaries and container images for Windows, Linux, and macOS.",
+  },
+  {
+    id: "Two",
+    title: "What Microsoft 365 services can I backup using Corso?",
+    description:
+      "Corso currently supports OneDrive and Exchange. Support for Teams and SharePoint is in active development and is therefore not recommended for production use.",
+  },
+  {
+    id: "Three",
+    title: "What object storage does Corso support?",
+    description:
+      "Corso supports any S3-compliant object storage system including AWS S3 (including Glacier Instant Access), Google Cloud Storage, and Backblaze. Azure Blob support is coming soon.",
+  },
+  {
+    id: "Four",
+    title: "How can I get help for Corso?",
+    comp: (
+      <>
+        {" "}
+        If you are unable to find an answer in our documentation, please file{" "}
+        <a
+          href="https://github.com/alcionai/corso/issues"
+          className="text-indigo-600"
+          target="_blank"
+        >
+          GitHub issues
+        </a>{" "}
+        for bugs or join the{" "}
+        <a
+          href="https://discord.gg/63DTTSnuhT"
+          className="text-indigo-600"
+          target="_blank"
+        >
+          Discord community
+        </a>
+        .
+      </>
+    ),
+  },
+  {
+    id: "Five",
+    title: "What is Corso's open-source license?",
+    description:
+      "Corso's source code is licensed under the OSI-approved Apache v2 open-source license.",
+  },
+  {
+    id: "Six",
+    title: "How do I request a new feature?",
+    comp: (
+      <>
+        {" "}
+        You can request new features by creating a{" "}
+        <a
+          href="https://github.com/alcionai/corso/issues"
+          className="text-indigo-600"
+          target="_blank"
+        >
+          new GitHub issue
+        </a>{" "}
+        and labeling it as an enhancement.
+      </>
+    ),
+  },
+];
+
 export default function ThirdSection() {
   useEffect(() => {
     new WOW().init();
@@ -355,7 +426,11 @@ export default function ThirdSection() {
 
       <div className="container md:mb-8 mb-4 md:mt-24 mt-16 wow animate__animated animate__fadeInUp">
         <div className="grid grid-cols-1 pb-8 text-center">
-          <h3 className="mb-6 mt-8 text-white md:text-4xl text-3xl md:leading-normal leading-normal font-bold">
+          <h3
+            className={`mb-6 mt-8 ${
+              isDark ? "text-white" : "text-[#161C2D]"
+            } md:text-4xl text-3xl md:leading-normal leading-normal font-bold`}
+          >
             Frequently Asked Questions
           </h3>
         </div>
@@ -374,214 +449,9 @@ export default function ThirdSection() {
 
           <div className="md:col-span-6">
             <div className="accordion space-y-3" id="accordionExample">
-              <div className="accordion-item !text-white relative  shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 !cursor-pointer font-semibold"
-                  id="headingOne"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="false"
-                    aria-controls="collapseOne"
-                  >
-                    <span>What platforms does Corso run on?</span>
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 !visible dark:text-gray-400">
-                      Corso has both native binaries and container images for
-                      Windows, Linux, and macOS.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item !text-white relative  shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 !cursor-pointer font-semibold"
-                  id="heading2"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse2"
-                    aria-expanded="false"
-                    aria-controls="collapse2"
-                  >
-                    <span>
-                      What Microsoft 365 services can I backup using Corso?
-                    </span>
-                  </button>
-                </h2>
-                <div
-                  id="collapse2"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading2"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 !visible dark:text-gray-400">
-                      Corso currently supports OneDrive and Exchange. Support
-                      for Teams and SharePoint is in active development and is
-                      therefore not recommended for production use.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item !text-white relative  shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 !cursor-pointer font-semibold"
-                  id="heading3"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse3"
-                    aria-expanded="false"
-                    aria-controls="collapse3"
-                  >
-                    <span>What object storage does Corso support?</span>
-                  </button>
-                </h2>
-                <div
-                  id="collapse3"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading3"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 dark:text-gray-400 !visible">
-                      Corso supports any S3-compliant object storage system
-                      including AWS S3 (including Glacier Instant Access),
-                      Google Cloud Storage, and Backblaze. Azure Blob support is
-                      coming soon.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item !text-white relative shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 font-semibold"
-                  id="heading4"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse4"
-                    aria-expanded="false"
-                    aria-controls="collapse4"
-                  >
-                    <span>How can I get help for Corso?</span>
-                  </button>
-                </h2>
-                <div
-                  id="collapse4"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading4"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 dark:text-gray-400 !visible">
-                      If you are unable to find an answer in our documentation,
-                      please file{" "}
-                      <a
-                        href="https://github.com/alcionai/corso/issues"
-                        className="text-indigo-600"
-                        target="_blank"
-                      >
-                        GitHub issues
-                      </a>{" "}
-                      for bugs or join the{" "}
-                      <a
-                        href="https://discord.gg/63DTTSnuhT"
-                        className="text-indigo-600"
-                        target="_blank"
-                      >
-                        Discord community
-                      </a>
-                      .
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item !text-white relative  shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 !cursor-pointer font-semibold"
-                  id="heading5"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse5"
-                    aria-expanded="false"
-                    aria-controls="collapse5"
-                  >
-                    <span>What is Corso's open-source license?</span>
-                  </button>
-                </h2>
-                <div
-                  id="collapse5"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading5"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 dark:text-gray-400 !visible">
-                      Corso's source code is licensed under the OSI-approved
-                      Apache v2 open-source license.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="accordion-item !text-white relative  shadow dark:shadow-gray-800 rounded-md overflow-hidden">
-                <h2
-                  className="accordion-header mb-0 !cursor-pointer font-semibold"
-                  id="heading6"
-                >
-                  <button
-                    className="transition accordion-button-custom text-white !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapse6"
-                    aria-expanded="false"
-                    aria-controls="collapse6"
-                  >
-                    <span>How do I request a new feature?</span>
-                  </button>
-                </h2>
-                <div
-                  id="collapse6"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="heading6"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body p-5">
-                    <p className="text-slate-400 dark:text-gray-400 !visible">
-                      You can request new features by creating a{" "}
-                      <a
-                        href="https://github.com/alcionai/corso/issues"
-                        className="text-indigo-600"
-                        target="_blank"
-                      >
-                        new GitHub issue
-                      </a>{" "}
-                      and labeling it as an enhancement.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              {AccordionItemsData.map((item, i) => (
+                <AccordionItemCard {...item} key={i} />
+              ))}
             </div>
           </div>
         </div>
@@ -589,6 +459,42 @@ export default function ThirdSection() {
     </section>
   );
 }
+
+const AccordionItemCard = ({ title, description, id, comp }) => {
+  const { isDarkTheme: isDark } = useColorMode();
+
+  return (
+    <div className="accordion-item text-white relative  shadow shadow-gray-800 rounded-md overflow-hidden">
+      <h2
+        className="accordion-header mb-0 !cursor-pointer font-semibold"
+        id={`heading${id}`}
+      >
+        <button
+          className={`transition accordion-button-custom ${
+            isDark ? "text-white" : "text-[#161C2D]"
+          } !text-base !cursor-pointer border-none outline-none collapsed focus:outline-none !bg-transparent flex justify-between items-center p-5 w-full font-medium text-left`}
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target={`#collapse${id}`}
+          aria-expanded="false"
+          aria-controls={`collapse${id}`}
+        >
+          <span>{title}</span>
+        </button>
+      </h2>
+      <div
+        id={`collapse${id}`}
+        className="accordion-collapse collapse"
+        aria-labelledby={`heading${id}`}
+        data-bs-parent="#accordionExample"
+      >
+        <div className="accordion-body p-5">
+          <p className="visible text-gray-400">{comp ? comp : description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const KeyFeaturesCard = ({ content, icon }) => {
   const { isDarkTheme: isDark } = useColorMode();
