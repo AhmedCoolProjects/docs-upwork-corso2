@@ -6,19 +6,19 @@ export default function BackToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }
   function scrollFunction() {
-    var mybutton = document.getElementById("back-to-top");
-    if (mybutton != null) {
-      if (
-        document.body.scrollTop > 500 ||
-        document.documentElement.scrollTop > 500
-      ) {
-        mybutton.classList.add("flex");
-        mybutton.classList.remove("hidden");
-      } else {
-        mybutton.classList.add("hidden");
-        mybutton.classList.remove("flex");
-      }
-    }
+    // var mybutton = document.getElementById("back-to-top");
+    // if (mybutton != null) {
+    //   if (
+    //     document.body.scrollTop > 500 ||
+    //     document.documentElement.scrollTop > 500
+    //   ) {
+    //     mybutton.classList.add("flex");
+    //     mybutton.classList.remove("hidden");
+    //   } else {
+    //     mybutton.classList.add("hidden");
+    //     mybutton.classList.remove("flex");
+    //   }
+    // }
   }
   useEffect(() => {
     window.onscroll = function () {

@@ -3,10 +3,10 @@ import "animate.css";
 import loadable from "@loadable/component";
 import FirstSection from "./FirstSection";
 import SecondSection from "./SecondSection";
+import ThirdSection from "./ThirdSection";
 import FourthSection from "./FourthSection";
 import Cookies from "./Cookies";
 
-const ThirdSectionComp = loadable(() => import("./ThirdSection"));
 const BackToTopComp = loadable(() => import("./BackToTop"));
 
 export function MainComp() {
@@ -17,7 +17,7 @@ export function MainComp() {
       {/* SECTION 2 */}
       <SecondSection />
       {/* SECTION 3 */}
-      <ThirdSectionComp />
+      <ThirdSection />
       {/* SECTION 4 */}
       <FourthSection />
       {/* BACK TO TOP */}

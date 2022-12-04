@@ -1,10 +1,6 @@
-import React, { useEffect } from "react";
-import feather from "feather-icons";
-import { WOW } from "wowjs";
-import { jarallax } from "jarallax";
+import React, { useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import "animate.css";
-import "tw-elements";
 import { useColorMode } from "@docusaurus/theme-common";
 
 const KeyFeaturesData = [
@@ -118,13 +114,23 @@ const AccordionItemsData = [
 ];
 
 export default function ThirdSection() {
+  const jarallaxRef = useRef(null);
   useEffect(() => {
-    new WOW().init();
-    feather.replace();
-    jarallax(document.querySelectorAll(".jarallax"), {
-      speed: 0.2,
-    });
-  });
+    if (typeof window !== "undefined") {
+      const WOW = require("wowjs");
+      const father = require("feather-icons");
+      const jarallax = require("jarallax");
+      require("tw-elements");
+
+      new WOW.WOW({
+        live: false,
+      }).init();
+      father.replace();
+      jarallax.jarallax(jarallaxRef.current, {
+        speed: 0.2,
+      });
+    }
+  }, []);
 
   const { isDarkTheme: isDark } = useColorMode();
 
@@ -440,6 +446,7 @@ export default function ThirdSection() {
             <div className="relative">
               <div className="relative rounded-xl overflow-hidden shadow-md dark:shadow-gray-800">
                 <div
+                  ref={jarallaxRef}
                   className="w-full jarallax py-72 bg-slate-400 custom-bg_ bg-no-repeat bg-top"
                   data-jarallax='{"speed": 0.1}'
                 ></div>
