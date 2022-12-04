@@ -7,7 +7,6 @@ export default function FirstSection() {
   return (
     <section className="relative !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
-        className={`${isDark ? "bg-[#151C3D]" : "bg-[#f6f6fe]"} absolute`}
         style={{
           left: "-20rem",
           right: 0,
@@ -16,6 +15,8 @@ export default function FirstSection() {
           height: "62rem",
           width: "140rem",
           transform: "rotate(-12deg)",
+          backgroundColor: isDark ? "#151C3D" : "#f6f6fe",
+          position: "absolute",
         }}
       ></div>
       <div
