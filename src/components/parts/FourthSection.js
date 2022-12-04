@@ -1,5 +1,4 @@
 import React from "react";
-import "animate.css";
 import { Icon } from "@iconify/react";
 
 export default function FourthSection() {
