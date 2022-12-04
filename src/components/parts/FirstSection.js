@@ -4,6 +4,7 @@ export default function FirstSection() {
   return (
     <section className="relative first-section---custom !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
+        className="bg---rotated"
         style={{
           left: "-20rem",
           right: 0,

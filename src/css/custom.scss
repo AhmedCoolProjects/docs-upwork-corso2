@@ -62,7 +62,9 @@ html{
 }
 
 [data-theme='dark'] .first-section---custom {
+  .bg---rotated{
   background-color: #151C3D;
+  }
   h4{
     color: #fff;
   }
@@ -72,7 +74,9 @@ html{
 }
 
 [data-theme='light'] .first-section---custom {
+  .bg---rotated{
   background-color: #f6f6fe;
+  }
   h4{
     color: #161c2d;
   }
