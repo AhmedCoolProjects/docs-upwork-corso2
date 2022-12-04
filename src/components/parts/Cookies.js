@@ -17,7 +17,7 @@ export default function Cookies() {
         isDark ? "bg-slate-900" : "bg-white"
       } shadow shadow-gray-800 rounded-md pt-6 pb-2 px-6 z-50`}
     >
-      <p className={`${isDark ? "text-slate-400" : "161c2d"}`}>
+      <p className={`${isDark ? "text-slate-400" : "text-[#161c2d]"}`}>
         This website uses cookies to provide you with a great user experience.
         By using it, you accept our{" "}
         <a
@@ -35,9 +35,7 @@ export default function Cookies() {
           className="absolute border-none !bg-transparent p-0 cursor-pointer font-semibold top-2 right-2"
         >
           <Icon
-            className={`text-dark ${
-              isDark ? "text-slate-200" : "text-dark"
-            } text-2xl`}
+            className={`${isDark ? "text-slate-200" : "text-dark"} text-2xl`}
             icon="humbleicons:times"
           />
         </button>
