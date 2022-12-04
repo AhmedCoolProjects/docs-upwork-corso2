@@ -4,7 +4,7 @@ export default function FirstSection() {
   return (
     <section className="relative first-section---custom !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
-        className="bg---rotated"
+        className="bg---rotated absolute"
         style={{
           left: "-20rem",
           right: 0,
@@ -13,7 +13,6 @@ export default function FirstSection() {
           height: "62rem",
           width: "140rem",
           transform: "rotate(-12deg)",
-          position: "absolute",
         }}
       ></div>
       <div

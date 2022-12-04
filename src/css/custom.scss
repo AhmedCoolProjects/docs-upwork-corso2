@@ -85,6 +85,30 @@ html{
   }
 }
 
+[data-theme='dark'] .third-section---custom {
+  .h3-1---custom{
+    color: #fff;
+  }
+  .p-1---custom{
+    color: #94a3b8;
+  }
+  .h3-1---custom{
+    background-color: #0f172a;
+  }
+}
+
+[data-theme='light'] .third-section---custom {
+  .h3-1---custom{
+    color: #161C2D;
+  }
+  .p-1---custom{
+    color: #94A3B8;
+  }
+  .h3-1---custom{
+    background-color: #fff;
+  }
+}
+
 
 html[data-theme='light'] {
   --ifm-background-color: #ffffff;
