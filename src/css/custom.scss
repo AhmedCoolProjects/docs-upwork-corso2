@@ -43,10 +43,22 @@ html{
 
 [data-theme='dark'] .cookies---custom {
   background-color: #0f172a;
+  p{
+    color: #94a3b8;
+  }
+  .icon---custom{
+    color: #e2e8f0;
+  }
 }
 
 [data-theme='light'] .cookies---custom {
   background-color: #fff;
+  p{
+    color: #161c2d;
+  }
+  .icon---custom{
+    color:  #3c4858;
+  }
 }
 
 
