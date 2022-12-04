@@ -61,6 +61,26 @@ html{
   }
 }
 
+[data-theme='dark'] .first-section---custom {
+  background-color: #151C3D;
+  h4{
+    color: #fff;
+  }
+  p{
+    color: #cbd5e1;
+  }
+}
+
+[data-theme='light'] .first-section---custom {
+  background-color: #f6f6fe;
+  h4{
+    color: #161c2d;
+  }
+  p{
+    color: #94A3B8;
+  }
+}
+
 
 html[data-theme='light'] {
   --ifm-background-color: #ffffff;

@@ -1,11 +1,8 @@
 import React from "react";
-import "animate.css";
-import { useColorMode } from "@docusaurus/theme-common";
 
 export default function FirstSection() {
-  const { isDarkTheme: isDark } = useColorMode();
   return (
-    <section className="relative !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
+    <section className="relative first-section---custom !tracking-wide flex flex-col home-wrapper items-center overflow-hidden">
       <div
         style={{
           left: "-20rem",
@@ -15,7 +12,6 @@ export default function FirstSection() {
           height: "62rem",
           width: "140rem",
           transform: "rotate(-12deg)",
-          backgroundColor: isDark ? "#151C3D" : "#f6f6fe",
           position: "absolute",
         }}
       ></div>
@@ -28,18 +24,12 @@ export default function FirstSection() {
         <div className="grid !z-10 grid-cols-1 mt-28 text-center">
           <div className="wow !z-10 animate__animated animate__fadeIn">
             <h4
-              className={`font-bold ${
-                isDark ? "text-white" : "text-[#161c2d]"
-              } !z-10 !leading-normal text-4xl lg:text-5xl mb-5`}
+              className={`font-bold !z-10 !leading-normal text-4xl lg:text-5xl mb-5`}
             >
               Free, Secure, and Open-Source
               <br /> Backup for Microsoft 365
             </h4>
-            <p
-              className={`${
-                isDark ? "text-slate-300" : "text-[#94A3B8]"
-              } !z-10 text-xl max-w-xl mx-auto`}
-            >
+            <p className={` !z-10 text-xl max-w-xl mx-auto`}>
               The #1 open-source backup tool for Microsoft 365
             </p>
           </div>
