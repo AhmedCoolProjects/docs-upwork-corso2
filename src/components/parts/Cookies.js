@@ -13,12 +13,7 @@ export default function Cookies() {
   return (
     <div
       id="cookies"
-      className={`cookie-popup !tracking-wide fixed max-w-lg bottom-3 right-3 left-3 sm:left-0 sm:right-0 mx-auto shadow shadow-gray-800 rounded-md pt-6 pb-2 px-6 z-50`}
-      style={{
-        backgroundColor: isDark
-          ? "rgb(15 23 42 / var(--tw-bg-opacity)) !important"
-          : "#FFFFFF",
-      }}
+      className={`cookie-popup !tracking-wide fixed max-w-lg bottom-3 right-3 left-3 sm:left-0 sm:right-0 mx-auto cookies---custom shadow shadow-gray-800 rounded-md pt-6 pb-2 px-6 z-50`}
     >
       <p className={`${isDark ? "text-slate-400" : "text-[#161c2d]"}`}>
         This website uses cookies to provide you with a great user experience.

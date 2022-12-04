@@ -41,6 +41,15 @@ html{
 
 }
 
+[data-theme='dark'] .cookies---custom {
+  background-color: #0f172a;
+}
+
+[data-theme='light'] .cookies---custom {
+  background-color: #fff;
+}
+
+
 html[data-theme='light'] {
   --ifm-background-color: #ffffff;
 }
